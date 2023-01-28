@@ -1,0 +1,8 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: SAUSAGE-API-GATEWAY
+  main:
+    web-application-type: reactive
