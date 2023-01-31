@@ -6,3 +6,8 @@ spring:
     name: SAUSAGE-API-GATEWAY
   main:
     web-application-type: reactive
+  sleuth:
+    sampler:
+      probability: 1.0
+    zipkin:
+      base-url: http://127.0.0.1:9411/

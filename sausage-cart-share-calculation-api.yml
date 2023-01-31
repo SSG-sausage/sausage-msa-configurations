@@ -7,4 +7,8 @@ server:
 spring:
   application:
     name: SAUSAGE-CART-SHARE-CALCULATION-API
-
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://127.0.0.1:9411/

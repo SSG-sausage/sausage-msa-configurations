@@ -19,7 +19,7 @@ spring:
   sql:
     init:
       schema-locations: classpath:schema.sql
-#      data-locations: classpath:data.sql
+      #      data-locations: classpath:data.sql
       mode: ALWAYS
 
 eureka:
@@ -29,4 +29,5 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
 
-
+kafka:
+  address: localhost:9091,localhost:9092,localhost:9093
