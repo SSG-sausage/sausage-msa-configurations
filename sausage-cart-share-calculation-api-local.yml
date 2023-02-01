@@ -1,4 +1,20 @@
+server:
+  port: 8084
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
 spring:
+  application:
+    name: SAUSAGE-CART-SHARE-CALCULATION-API
+
+  sleuth:
+    sampler:
+      probability: 1.0
+    zipkin:
+      base-url: http://127.0.0.1:9411/
+
   config:
     activate:
       on-profile: local

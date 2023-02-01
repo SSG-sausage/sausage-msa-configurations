@@ -1,7 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
 spring:
-  config:
-    activate:
-      on-profile: local
+  application:
+    name: SAUSAGE-MEMBER-API
+
+  sleuth:
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    base-url: http://127.0.0.1:9411/
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
